@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
@@ -48,8 +49,8 @@ export default function LoginForm() {
         </form>
 
         <div className="flex justify-between items-center mt-6 text-sm font-medium text-rose-700">
-          <a href="/forget"><button className="hover:underline">Forgot Password?</button></a>
-          <a href="/signup"><button className="hover:underline">Sign Up</button></a>
+          <Link to="/forget">  <button className="hover:underline">Forgot Password?</button></Link>
+          <Link to="/signup"><button className="hover:underline">Sign Up</button></Link>
         </div>
       </div>
     </div>
